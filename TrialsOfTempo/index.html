@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Load core p5.js library (main game framework) -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+
+    <!-- Physics engine + p5play (for collisions + physics behavior) -->
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+
+    <!-- p5.sound (needed for beat detection + music sync) -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+
+    <!-- Game styling (fonts, UI, colors) -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+    <main>
+      <!-- Canvas is created by p5.js inside sketch.js -->
+    </main>
+
+    <!--═══════════════════════════════════════════════════-->
+    <!-- ENTITY FILES (things that exist in the world)     -->
+    <!--═══════════════════════════════════════════════════-->
+    <script src="systems/PlayerControl.js"></script>
+    <script src="entities/Player.js"></script>      <!-- Draws player visuals -->
+    <script src="entities/Obstacle.js"></script>    <!-- Obstacle class + movement -->
+    <script src="entities/Powerup.js"></script>     <!-- Powerup behavior + effect -->
+    <script src="entities/Boss.js"></script>        <!-- Boss logic + attacks -->
+
+    <!--═══════════════════════════════════════════════════-->
+    <!-- VISUAL EFFECTS (backgrounds, particles, etc.)     -->
+    <!--═══════════════════════════════════════════════════-->
+    <script src="visuals/Background.js"></script>   <!-- Parallax + grid effects -->
+    <script src="visuals/Particles.js"></script>    <!-- Trail effects + explosions -->
+
+    <!--═══════════════════════════════════════════════════-->
+    <!-- UI / SCREEN FILES (menus & heads-up display)      -->
+    <!--═══════════════════════════════════════════════════-->
+    <script src="ui/GameUI.js"></script>            <!-- Score, health, HUD -->
+    <script src="ui/TitleScreen.js"></script>       <!-- Title screen -->
+    <script src="ui/LevelSelect.js"></script>       <!-- Level selection menu -->
+    <script src="ui/CustomizeScreen.js"></script>   <!-- Character selection -->
+    <script src="ui/EndScreens.js"></script>        <!-- Game Over + Victory -->
+    <script src="ui/Credits.js"></script>           <!-- Credits roll -->
+
+    <!--═══════════════════════════════════════════════════-->
+    <!-- GAME SYSTEMS (logic, collisions, stage flow)      -->
+    <!--═══════════════════════════════════════════════════-->
+    <script src="systems/player.js"></script>       <!-- Player stats + reset -->
+    <script src="systems/MenuHandlers.js"></script> <!-- Buttons + menu clicks -->
+    <script src="systems/Input.js"></script>        <!-- Keyboard controls -->
+    <script src="systems/Collision.js"></script>    <!-- Hit detection -->
+    <script src="systems/Rhythm.js"></script>       <!-- Sync obstacles to BPM -->
+    <script src="systems/Stage.js"></script>        <!-- Stage progression + difficulty -->
+    <script src="systems/GameLoop.js"></script>     <!-- updateGame() logic -->
+    <script src="systems/GameRender.js"></script>   <!-- drawGame() visuals -->
+    <script src="systems/BeatSystem.js"></script>   <!-- Beat timing system -->
+
+    <!--═══════════════════════════════════════════════════-->
+    <!-- MAIN FILE (runs setup() and draw())               -->
+    <!--═══════════════════════════════════════════════════-->
+    <script src="sketch.js"></script>
+
+  </body>
+</html>

@@ -252,16 +252,4 @@ Cleaned and turned Saturn’s code into reusable components.
 
 https://editor.p5js.org/tsuyosi81/sketches/-dYIafUx7
 
-## Contact:
-_____________________________________________________________
 
-Saturn:
-
-- Microsoft teams (samarb2@uic.edu)
-- Text (773-802-9165)
-- Discord (Not used often but I can set it up if needed just lmk)
-
-Frankie:
-
-- Phone Number (847-802-0006)
-- Discord (legionofvamps)
